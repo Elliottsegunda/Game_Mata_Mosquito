@@ -16,3 +16,8 @@ ajustaTamanhoTela();
 var posicaoX = Math.floor(Math.random() * largura); // ajustar os valores randomicos no intervalo da largura
 var posicaoY = Math.floor(Math.random() * altura); // ajustar os valores randomicos no intervalo da altura
 console.log(posicaoX, posicaoY);
+
+//criar o html
+var mosquito = document.createElement('img');
+mosquito.src = 'imagens/mosquito.png';
+document.body.appendChild(mosquito)// atribuindo o filho(imagem) no elemento pai(body)
