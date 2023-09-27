@@ -27,15 +27,14 @@ var posicaoY = Math.floor(Math.random() * altura) - 90; // ajustar os valores ra
 //criar o html
 var mosquito = document.createElement('img');
 mosquito.src = 'imagens/mosquito.png';
-mosquito.className = tamanhoAleatorio(); // atribuindo a classe css
+mosquito.className = tamanhoAleatorio()+' '+ladoAleatorio(); // atribuindo a classe css
 //atribuir aos elementos os valores randomicos
 mosquito.style.left = posicaoX+'px';
 mosquito.style.top = posicaoY+'px';
 mosquito.style.position = 'absolute';
 document.body.appendChild(mosquito);// atribuindo o filho(imagem) no elemento pai(body)
 
- console.log(ladoAleatorio());
- 
+
 }
 
 function tamanhoAleatorio(){
