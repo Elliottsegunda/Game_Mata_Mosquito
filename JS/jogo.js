@@ -18,10 +18,11 @@ function posicaoRandomica(){
 
 var posicaoX = Math.floor(Math.random() * largura) - 90; // ajustar os valores randomicos no intervalo da largura! estamos ubtraindo 90 pq a rolagem ainda acontece pq a imagem vale 50px
 var posicaoY = Math.floor(Math.random() * altura) - 90; // ajustar os valores randomicos no intervalo da altura
-console.log(posicaoX, posicaoY);
+//console.log(posicaoX, posicaoY);
 
   posicaoX = posicaoX < 0 ? 0 : posicaoX; // operador ternario para controlar a posição
   posicaoY = posicaoY < 0 ? 0 : posicaoY; // operador ternario para controlar a posição
+  console.log(posicaoX, posicaoY);
 
 //criar o html
 var mosquito = document.createElement('img');
@@ -38,7 +39,6 @@ tamanhoAleatorio();
 
 function tamanhoAleatorio(){
     var classe = Math.floor(Math.random() * 3); // classes aleatorias para alternar o tamanho do mosquito
-    console.log(classe);
 
     switch(classe){
         case 0:
