@@ -20,4 +20,9 @@ console.log(posicaoX, posicaoY);
 //criar o html
 var mosquito = document.createElement('img');
 mosquito.src = 'imagens/mosquito.png';
+mosquito.className = 'mosquito1'; // atribuindo a classe css
+//atribuir aos elementos os valores randomicos
+mosquito.style.left = posicaoX+'px';
+mosquito.style.left = posicaoX+'px';
+mosquito.style.position = 'absolute';
 document.body.appendChild(mosquito)// atribuindo o filho(imagem) no elemento pai(body)
