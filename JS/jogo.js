@@ -52,3 +52,15 @@ function tamanhoAleatorio(){
     }
 
 }
+ function ladoAleatorio(){
+    var classe = Math.floor(Math.random() * 2); // classes aleatorias para alternar o tamanho do mosquito
+
+    switch(classe){
+        case 0:
+            return 'ladoA';
+        
+        case 1:
+            return 'ladoB';
+    }
+
+ }
