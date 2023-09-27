@@ -34,7 +34,8 @@ mosquito.style.top = posicaoY+'px';
 mosquito.style.position = 'absolute';
 document.body.appendChild(mosquito);// atribuindo o filho(imagem) no elemento pai(body)
 
-tamanhoAleatorio();
+ console.log(ladoAleatorio());
+ 
 }
 
 function tamanhoAleatorio(){
