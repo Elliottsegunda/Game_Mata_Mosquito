@@ -14,7 +14,11 @@ function ajustaTamanhoTela(){
 ajustaTamanhoTela();
 
 function posicaoRandomica(){
-// remover o mosquito anterior caso exista
+// remover o mosquito anterior (caso exista)
+if(document.getElementById('mosquito')){
+    document.getElementById('mosquito').remove();
+}
+
 
 var posicaoX = Math.floor(Math.random() * largura) - 90; // ajustar os valores randomicos no intervalo da largura! estamos ubtraindo 90 pq a rolagem ainda acontece pq a imagem vale 50px
 var posicaoY = Math.floor(Math.random() * altura) - 90; // ajustar os valores randomicos no intervalo da altura
