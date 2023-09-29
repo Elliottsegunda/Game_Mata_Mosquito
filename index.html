@@ -20,11 +20,28 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-danger btn-lg" onclick="window.location.href = 'app.html' ">Start Game</button>
+                    <div class="mb-2">
+                        <select class="form-control">
+                            <option value="">-- Selecione o Nível --</option>
+                            <option value="normal">Normal</option>
+                            <option value="dificil">Dificil</option>
+                            <option value="impossivel">Missão Impossivel</option>
+                        </select>
+                    </div>
+                 </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-danger btn-lg" onclick="iniciarJogo()" >Start Game</button>
+                </div>
+            </div>
+        </div>
+     </div>
     
 </body>
 </html>
