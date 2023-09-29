@@ -20,7 +20,7 @@ ajustaTamanhoTela();
         if(tempo <= 0){
             clearInterval(cronometro);
             clearInterval(criaMosquito);
-            alert('Vitoria');
+            window.location.href = 'vitory.html';
         }
         document.getElementById('cronometro').innerHTML = tempo;
     },1000)
