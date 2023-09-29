@@ -21,7 +21,7 @@ if(document.getElementById('mosquito') ){
 
     //perda de vida caso o mosquito desapareça sem ser clicado
     if(vidas > 3){
-      window.location.href(game_over.html);
+      window.location.href = 'game_over.html';
     }
     else{
         document.getElementById('V'+vidas).src = 'imagens/coracao_vazio.png';
