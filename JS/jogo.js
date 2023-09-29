@@ -16,15 +16,16 @@ ajustaTamanhoTela();
 
 function posicaoRandomica(){
 // remover o mosquito anterior (caso exista)
-if(document.getElementById('mosquito')){
+if(document.getElementById('mosquito') ){
     document.getElementById('mosquito').remove();
 
     //perda de vida caso o mosquito desapareça sem ser clicado
     if(vidas > 3){
-       alert('Game Over');
+      window.location.href(game_over.html);
     }
     else{
-        document.getElementsById('V'+vidas).src = 'imagens/coracao_vazio.png';
+        document.getElementById('V'+vidas).src = 'imagens/coracao_vazio.png';
+        vidas++;
     }
 }
 
