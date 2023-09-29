@@ -11,7 +11,8 @@
         function iniciarJogo(){
             var nivel = document.getElementById('nivel').value;
             if(nivel === ''){
-                alert('Selecione um nivel Válido')
+                alert('Selecione um nivel Válido');
+                return false
             }
             else{
                 alert(nivel);
