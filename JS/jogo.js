@@ -3,6 +3,7 @@
 var largura = 0;
 var altura = 0;
 var vidas = 1;
+var tempo = 10;
 
 function ajustaTamanhoTela(){
     largura = window.innerWidth;
@@ -13,6 +14,11 @@ function ajustaTamanhoTela(){
     // apesar de já definida, só vai redimencionar atraves do evento onresize
 }
 ajustaTamanhoTela();
+
+    var cronometro = setInterval(function(){
+        tempo -= 1;
+        document.getElementById('cronometro').innerHTML = tempo;
+    },1000)
 
 function posicaoRandomica(){
 // remover o mosquito anterior (caso exista)
