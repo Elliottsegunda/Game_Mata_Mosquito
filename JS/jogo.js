@@ -17,7 +17,7 @@ ajustaTamanhoTela();
 
     var cronometro = setInterval(function(){
         tempo -= 1;
-        if(tempo < 0){
+        if(tempo <= 0){
             clearInterval(cronometro);
             clearInterval(criaMosquito);
             alert('Vitoria');
